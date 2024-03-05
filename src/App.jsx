@@ -10,13 +10,12 @@ function App() {
   ])
   const [todo,setTodo]= useState("")
 
-
   const [showValidation,setShowValidation]= useState(false)
 
   
 
   function deleteTodo(id){
-    setTodoList(todoList.filter(todo=> todo.id !== id)) 
+    setTodoList(todoList.filter(todo=> todo.id == id)) 
   }
 
   function handleSubmit(e){
